@@ -37,7 +37,18 @@
 				<td>${item.preco}</td>
 				<td>${item.descricao}</td>
 				<td>${item.dataInicioVenda.time}</td>
-				<td><a href="#" onclick="return removeProduto(${teim.id})">Remover</a></td>
+				<td><a href="#" onclick="return removeProduto(${item.id})">Remover</a></td>
+				<td><p>#{index.count}</p></td>
+				<td>
+					<c:choose>
+						<c:when test="${item.usado}">
+						<td>Não</td>
+						</c:when>
+						<c:otherwise>
+							<td>Sim</td>
+						</c:otherwise>					
+					</c:choose>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>
