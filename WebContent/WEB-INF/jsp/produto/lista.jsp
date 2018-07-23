@@ -36,7 +36,7 @@
 				<td>${item.nome}></td>
 				<td>${item.preco}</td>
 				<td>${item.descricao}</td>
-				<td>${item.dataInicioVenda.time}</td>
+				<td><fmt:formatDate pattern="dd/MM/yyyy" value="${item.dataInicioVenda.time}" /></td>
 				<td><a href="#" onclick="return removeProduto(${item.id})">Remover</a></td>
 				<td><p>#{index.count}</p></td>
 				<td>
