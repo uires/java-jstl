@@ -34,7 +34,7 @@
 		<c:forEach varStatus="index" var="item" items="${produtoList}">		
 			<tr id="produto${item.id}">
 				<td>${item.nome}></td>
-				<td>${item.preco}</td>
+				<td><fmt:parseNumber  value="${item.preco}" type="currency"/></td>
 				<td>${item.descricao}</td>
 				<td><fmt:formatDate pattern="dd/MM/yyyy" value="${item.dataInicioVenda.time}" /></td>
 				<td><a href="#" onclick="return removeProduto(${item.id})">Remover</a></td>
