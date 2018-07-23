@@ -1,0 +1,4 @@
+build/classes/br/*
+.settings
+.classpath
+.project
