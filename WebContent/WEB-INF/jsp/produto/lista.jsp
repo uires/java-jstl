@@ -52,7 +52,8 @@
 			</tr>
 		</c:forEach>
 	</table>
-	
 	<a href="<c:url value="/produto/formulario"/>">Adicionar um produto</a>
+	<hr />
+	<c:import url="../_comun/rodape.jsp" />
 </body>
 </html>
